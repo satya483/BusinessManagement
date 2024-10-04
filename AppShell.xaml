@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:BusinessManagement.Views"
+       x:Class="BusinessManagement.AppShell" Shell.FlyoutBehavior="Flyout">
+
+    <!-- Flyout menu -->
+    <FlyoutItem Title="Staff" Icon="Resources/Images/staff_icon.png">
+        <Tab>
+            <ShellContent Title="Manage Staff" ContentTemplate="{DataTemplate local:ManageStaffPage}" />
+            <ShellContent Title="Salary" ContentTemplate="{DataTemplate local:SalaryPage}" />
+            <ShellContent Title="Schedule" ContentTemplate="{DataTemplate local:SchedulePage}" />
+        </Tab>
+    </FlyoutItem>
+
+    <!-- Clients Menu Item -->
+    <FlyoutItem Title="Clients" Icon="Resources/Images/clients_icon.png">
+       <Tab>
+        <ShellContent ContentTemplate="{DataTemplate local:ClientsPage}" />
+       </Tab>
+    </FlyoutItem>
+
+</Shell>
